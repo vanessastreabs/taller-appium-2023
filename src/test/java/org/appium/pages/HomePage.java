@@ -14,6 +14,12 @@ public class HomePage extends BasePage{
     //Elementos
     @AndroidFindBy (id= "com.androidsample.generalstore:id/nameField")
     WebElement nameField;
+    @AndroidFindBy (id= "com.androidsample.generalstore:id/radioFemale")
+    WebElement femaleRadioBtn;
+    @AndroidFindBy (id= "com.androidsample.generalstore:id/radioMale")
+    WebElement maleRadioBtn;
+    @AndroidFindBy (id= "com.androidsample.generalstore:id/btnLetsShop")
+    WebElement letsShopBtn;
     //-------------------------------------------------------------------------------------------------------//
 
     //Métodos    
@@ -26,4 +32,16 @@ public class HomePage extends BasePage{
         country.click();
     }
 
+    public void selectGender(String gender){
+        if (gender == "Male"){
+            tapElement(maleRadioBtn);
+        } else {
+            tapElement(femaleRadioBtn);
+        }
+    }
+
+    public void tapLetsShop(){
+        tapElement(letsShopBtn);
+    }
+    
 }

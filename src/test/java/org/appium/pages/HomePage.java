@@ -14,6 +14,9 @@ public class HomePage extends BasePage{
     //Elementos
     @AndroidFindBy (id= "com.androidsample.generalstore:id/nameField")
     WebElement nameField;
+    @AndroidFindBy (id= "com.androidsample.generalstore:id/spinnerCountry")
+    WebElement countryDropDown;
+
     //-------------------------------------------------------------------------------------------------------//
 
     //Métodos    
@@ -22,6 +25,7 @@ public class HomePage extends BasePage{
     }
 
     public void selectCountry(String countryName) {
+        tapElement(countryDropDown);
         WebElement country = driver.findElement(AppiumBy.ByAndroidUIAutomator.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true))" + ".scrollIntoView(new UiSelector().text(\"" + countryName + "\"))"));
         country.click();
     }

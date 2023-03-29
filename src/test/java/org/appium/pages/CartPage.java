@@ -11,6 +11,8 @@ public class CartPage extends BasePage{
     }
     
     //Elementos
+    @AndroidFindBy(xpath = "//android.widget.RelativeLayout/android.widget.TextView[@text='Cart']")
+    WebElement cartPageTitle;
     @AndroidFindBy(id = "com.androidsample.generalstore:id/productName")
     WebElement productAdded;
 
@@ -18,6 +20,7 @@ public class CartPage extends BasePage{
 
     //Métodos    
     public String getProductAddedText(){
+        cartPageTitle.isDisplayed();
         return productAdded.getText();
     }
 }

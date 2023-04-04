@@ -41,3 +41,13 @@ Esta carpeta contiene los archivos test
 ## 📁resources/
 Esta carpeta contiene el archivo .apk
 </span>
+
+## 🔎capabilities para Appium Inspector
+
+```
+{
+  "appium:deviceName": "Pixel_4_API_30",
+  "platformName": "android",
+  "appium:app": "C:\\Users\\{Usuario}\\taller2023\\taller-appium-2023\\src\\test\\java\\resources\\General-Store.apk",
+  "appium:automationName": "UiAutomator2"
+}

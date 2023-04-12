@@ -26,7 +26,7 @@ public class TestBase {
         // Además setea la dirección IP y el número de puerto para el servidor de Appium.
         service = new AppiumServiceBuilder()
                 .withAppiumJS(new File(path + "\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
-                .withIPAddress("0.0.0.0").usingPort(4723).build();
+                .withIPAddress("127.0.0.1").usingPort(4723).build();
         // Inicia el servicio de Appium
         service.start();
 
@@ -35,7 +35,7 @@ public class TestBase {
         options.setDeviceName("Pixel4");
         // Levanta el emulador donde se ejecutaran las pruebas
         options.setAvd("Pixel4");
-        options.setApp(path + "\\taller2023\\taller-appium-2023\\src\\test\\java\\resources\\General-Store.apk");
+        options.setApp(path + "\\taller2023\\src\\test\\java\\resources\\General-Store.apk");
 
         // Crea una instancia de AndroidDriver e inicialíza con la URL del servidor de Appium y la instancia de UiAutomator2Options.
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);

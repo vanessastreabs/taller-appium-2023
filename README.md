@@ -48,6 +48,7 @@ Esta carpeta contiene el archivo .apk
 {
   "appium:deviceName": "Pixel_4_API_30",
   "platformName": "android",
+  "platformVersion": "11",
   "appium:app": "C:\\Users\\{Usuario}\\taller2023\\taller-appium-2023\\src\\test\\java\\resources\\General-Store.apk",
   "appium:automationName": "UiAutomator2"
 }

@@ -32,9 +32,9 @@ public class TestBase {
 
         // Crea una instancia de UiAutomator2Options y la configura con el nombre del dispositivo y el archivo APK para la aplicación que se va a probar.
         UiAutomator2Options options = new UiAutomator2Options();
-        options.setDeviceName("Pixel4");
+        options.setDeviceName("Pixel_4_API_30");
         // Levanta el emulador donde se ejecutaran las pruebas
-        options.setAvd("Pixel4");
+        options.setAvd("Pixel_4_API_30");
         options.setApp(path + "\\taller2023\\src\\test\\java\\resources\\General-Store.apk");
 
         // Crea una instancia de AndroidDriver e inicialíza con la URL del servidor de Appium y la instancia de UiAutomator2Options.
